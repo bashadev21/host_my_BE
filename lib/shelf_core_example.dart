@@ -6,8 +6,7 @@ import 'package:mongo_dart/mongo_dart.dart';
 
 void main() async {
   final db = await Db.create(
-      'mongodb+srv://basha28062:wRPw3xa4NEWHlNb6@cluster0.jqfihdd.mongodb.net/');
-  //final db = await Db.create('mongodb://localhost:27017/shelf_db');
+      'mongodb+srv://basha28062:wRPw3xa4NEWHlNb6@cluster0.jqfihdd.mongodb.net/shelf_db?retryWrites=true&w=majority&tls=true');
 
   await db.open();
   final messagesCollection = db.collection('messages');
