@@ -1,0 +1,5 @@
+{
+  "watch": ["bin", "lib"],
+  "ext": "dart",
+  "exec": "dart run lib/shelf_core_example.dart"
+}
