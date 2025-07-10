@@ -6,7 +6,7 @@ import 'package:mongo_dart/mongo_dart.dart';
 
 void main() async {
   final db = await Db.create(
-      'mongodb://basha28062:wRPw3xa4NEWHlNb6@ac-xyz-shard-00-00.mongodb.net:27017,ac-xyz-shard-00-01.mongodb.net:27017,ac-xyz-shard-00-02.mongodb.net:27017/shelf_db?ssl=true&replicaSet=atlas-xyz-shard-0&authSource=admin&retryWrites=true&w=majority');
+      'mongodb+srv://basha28062:wRPw3xa4NEWHlNb6@cluster0.jqfihdd.mongodb.net/');
   //final db = await Db.create('mongodb://localhost:27017/shelf_db');
 
   await db.open();
